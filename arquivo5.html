@@ -1,0 +1,146 @@
+<!--Curso de Engenharia de Software - UniEVANGÉLICA 
+Disciplina de Programação Web 
+Dev: Cálamo Andret - 2110383 
+DATA: 03/03/2023-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="CSS/arquivo5.css">
+        <title>Frutopia</title>
+        <style>
+            table, th, td{
+                border: 2px solid rgba(187, 255, 0, 0.432);
+                border-collapse: collapse;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <center>
+            <h1>Frutopia</h1>
+            </center>
+            <nav>
+              <ul>
+                <li><a href="arquivo.html">As Frutas mais caras do mundo!</a></li>
+                <li><a href="arquivo2.html">Relato Pessoal</a></li>
+                <li><a href="arquivo3.html">As Frutas mais caras do mundo!</a></li>
+                <li><a href="arquivo4.html">Imagens</a></li>
+              </ul>
+            </nav>
+          </header>
+        <h2>Tudo sobre Frutas!</h2>
+        <p align="justify">Fruta é um termo popular usado geralmente para identificar um fruto comestível e de sabor adocicado. 
+            Esse termo, que não possui valor botânico, é utilizado também para identificar estruturas que não são consideradas frutos verdadeiros, 
+            como é o caso do morango, mas que apresentam características de fruta. As frutas são utilizadas pelo homem de diferentes maneiras, 
+            podendo ser consumidas, por exemplo, in natura, secas e na forma de sucos, geleias e doces.
+        </p>
+        <br>
+        <img src="img/frutas.png" width="550px" height="400px">
+        <br>
+        <span style="font-size: x-small;">Frutas</span>
+        <table>
+            <h2>Frutas e suas classificações</h2>
+            <thead>
+                <tr>
+                  <th>Tipo</th>
+                  <th>Nome</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                    <td rowspan="4">Frutas Ácidas</td>
+                    <td>Limão</td>
+                </tr>
+                <tr>
+                    <td>Laranja</td>
+                </tr>
+                <tr>
+                    <td>Abacaxi</td>
+                </tr>
+                <tr>
+                    <td>Morango</td>
+                </tr>
+                <tr>
+                    <td rowspan="4">Frutas SemiÁcidas</td>
+                    <td>Manga</td>
+                </tr>
+                <tr>
+                    <td>Maçã</td>
+                </tr>
+                <tr>
+                    <td>Blueberry</td>
+                </tr>
+                <tr>
+                    <td>Pêssego</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">Frutas Doces</td>
+                    <td>Banana</td>
+                </tr>
+                <tr>
+                    <td>Mamão Papaia</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">Frutas hiper-hídricas</td>
+                    <td>Melancia</td>
+                </tr>
+                <tr>
+                    <td>Melão</td>
+                </tr>
+                <tr>
+                    <td rowspan="5">Frutas oleaginosas</td>
+                    <td>Abacate</td>
+                </tr>
+                <tr>
+                    <td>Amêndoa</td>
+                </tr>
+                <tr>
+                    <td>Nozes</td>
+                </tr>
+                <tr>
+                        <td>Castanha-do-pará</td>
+                </tr>
+                <tr>
+                        <td>Castanha-de-caju</td>
+                </tr>
+              </tbody>
+        </table>
+        <h3>Preencha o formulário a seguir!</h3>
+        <form>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome"><br>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email"><br>
+
+            <label for="fruta_preferida">Fruta Preferida:</label>
+            <input type="text" id="text" name="fruta_preferida"><br>
+
+            <label for="nota">Avalie o site:</label><br>    
+            <input type="radio" id="nota_avaliacao" name="nota" value="0">
+            <label for="nota_avaliacao">0</label><br>
+            <input type="radio" id="nota_avaliacao" name="nota" value="1">
+            <label for="nota_avaliacao">1</label><br>
+            <input type="radio" id="nota_avaliacao" name="nota" value="2">
+            <label for="nota_avaliacao">2</label><br>
+            <input type="radio" id="nota_avaliacao" name="nota" value="3">
+            <label for="nota_avaliacao">3</label><br>
+            <input type="radio" id="nota_avaliacao" name="nota" value="4">
+            <label for="nota_avaliacao">4</label><br>
+            <input type="radio" id="nota_avaliacao" name="nota" value="5">
+            <label for="nota_avaliacao">5</label><br>
+            <input type="radio" id="nota_avaliacao" name="nota" value="6">
+            <label for="nota_avaliacao">6</label><br>
+            <input type="radio" id="nota_avaliacao" name="nota" value="7">
+            <label for="nota_avaliacao">7</label><br>
+            <input type="radio" id="nota_avaliacao" name="nota" value="8">
+            <label for="nota_avaliacao">8</label><br>
+            <input type="radio" id="nota_avaliacao" name="nota" value="9">
+            <label for="nota_avaliacao">9</label><br>
+            <input type="radio" id="nota_avaliacao" name="nota" value="10">
+            <label for="nota_avaliacao">10</label><br><br>
+            <input type="submit" value="Enviar">
+        </form>
+    </body>
+</html>

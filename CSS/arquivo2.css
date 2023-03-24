@@ -1,0 +1,57 @@
+/* Estilo para o cabeçalho */
+header {
+    background-color: #f7df1e;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  /* Estilo para as etiquetas e campos de entrada */
+  label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  input[type="checkbox"], label[for^="caracteristicas"] {
+    display: inline-block;
+    margin-right: 10px;
+  }
+
+  select, option {
+    display: inline-block;
+    margin-right: 10px;
+  }
+    
+  input[type="text"], input[type="number"], input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+  }
+  
+  input[type="radio"], input[type="checkbox"] {
+    margin-right: 10px;
+  }
+  
+  /* Estilo para os botões */
+  input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #3e8e41;
+  }
+  
+  /* Estilo para as mensagens de erro */
+  .error {
+    color: red;
+    margin-bottom: 10px;
+  }
+  

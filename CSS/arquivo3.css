@@ -1,0 +1,56 @@
+/* Estilo da tabela das frutas mais caras do mundo */
+.table-frutas {
+  margin-top: 30px;
+}
+
+.table-frutas th {
+  text-align: center;
+  font-size: 18px;
+  background-color: #f0ad4e;
+  color: white;
+}
+
+.table-frutas td {
+  text-align: center;
+  font-size: 16px;
+}
+
+.table-frutas tbody tr:nth-child(odd) {
+  background-color: #f9f9f9;
+}
+
+.table-frutas tbody tr:hover {
+  background-color: #f5f5f5;
+}
+
+/* Estilo da tabela das top 5 frutas mais saudáveis */
+.table-saudaveis {
+  margin-top: 30px;
+}
+
+.table-saudaveis th {
+  text-align: center;
+  font-size: 18px;
+  background-color: #5cb85c;
+  color: white;
+}
+
+.table-saudaveis td {
+  font-size: 16px;
+}
+
+.table-saudaveis tbody tr:nth-child(odd) {
+  background-color: #f9f9f9;
+}
+
+.table-saudaveis tbody tr:hover {
+  background-color: #f5f5f5;
+}
+
+/* Estilo do título das tabelas */
+h2 {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  font-size: 24px;
+}

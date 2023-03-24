@@ -1,0 +1,256 @@
+<!--Curso de Engenharia de Software - UniEVANGÉLICA 
+Disciplina de Programação Web 
+Dev: Cálamo Andret - 2110383 
+DATA: 14/03/2023-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jogo da Memoria</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Righteous&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="card.css" />
+    <link rel="stylesheet" href="win.css" /><!--Estilo da tela de vitória-->
+    <link rel="stylesheet" href="responsive.css" />
+  </head>
+  <body>
+    <header>
+      <h1>JOGO DA MEMÓRIA</h1>
+      <nav>
+        <!--<a href="/">DECKS</a>
+        <a href="/">SOBRE</a>-->
+      </nav>
+    </header>
+    <!--ALTERAÇÃO* Essa div vai ser exibida quando o jogador vencer a partida!-->
+    <div id="vitoria">
+      <div id="container">
+        <h1>Parabéns!</h1>
+        <p>Você encontrou todos os pares com</p>
+        <h2><span id="movimentosvitoria">0</span> ERROS</h2>
+        <a href="index.html">Jogar denovo</a>
+      </div>
+    </div>
+    <!--FIM-ALTERAÇÃO*-->
+    <section id="responsivo">
+      <h2>Erros <span id="movimentos2">0</span></h2>
+      <!-- <button id="btn-mudartema">Mudar tema</button>
+          <button id="btn-reiniciar">Reiniciar</button> -->
+      <a href="index.html">Reiniciar</a>
+    </section>
+
+    <div class="corpo">
+      <section id="esq">
+        <h2>Erros <span id="movimentos">0</span></h2>
+        <!-- <button id="btn-mudartema">Mudar tema</button>
+            <button id="btn-reiniciar">Reiniciar</button> -->
+        <a href="index.html">Reiniciar</a>
+      </section>
+      <section class="jogo">
+        <div class="card" data-nome = "laranja">
+          <img
+            class="frente"
+            src="img/laranja.png"
+            alt="card"
+          />
+          <img
+            class="verso"
+            src="img/script-java.png"
+            alt="card"
+          />
+        </div>
+        <div class="card" data-nome = "laranja">
+          <img
+            class="frente"
+            src="img/laranja.png"
+            alt="card"
+          />
+          <img
+            class="verso"
+            src="img/script-java.png"
+            alt="card"
+          />
+        </div>
+        <div class="card" data-nome = "uva">
+          <img
+            class="frente"
+            src="img/uva.png"
+            alt="card"
+          />
+          <img
+            class="verso"
+            src="img/script-java.png"
+            alt="card"
+          />
+        </div>
+        <div class="card" data-nome = "uva">
+          <img
+            class="frente"
+            src="img/uva.png"
+            alt="card"
+          />
+          <img
+            class="verso"
+            src="img/script-java.png"
+            alt="card"
+          />
+        </div>
+        <div class="card" data-nome = "maca">
+          <img
+            class="frente"
+            src="img/maca.png"
+            alt="card"
+          />
+          <img
+            class="verso"
+            src="img/script-java.png"
+            alt="card"
+          />
+        </div>
+        <div class="card" data-nome = "maca">
+          <img
+            class="frente"
+            src="img/maca.png"
+            alt="card"
+          />
+          <img
+            class="verso"
+            src="img/script-java.png"
+            alt="card"
+          />
+        </div>
+        <div class="card" data-nome = "abacaxi">
+          <img
+            class="frente"
+            src="img/abacaxi (1).png"
+            alt="card"
+          />
+          <img
+            class="verso"
+            src="img/script-java.png"
+            alt="card"
+          />
+        </div>
+        <div class="card" data-nome = "abacaxi">
+          <img
+            class="frente"
+            src="img/abacaxi (1).png"
+            alt="card"
+          />
+          <img
+            class="verso"
+            src="img/script-java.png"
+            alt="card"
+          />
+        </div>
+        <div class="card" data-nome = "pera">
+          <img
+            class="frente"
+            src="img/pera.png"
+            alt="card"
+          />
+          <img
+            class="verso"
+            src="img/script-java.png"
+            alt="card"
+          />
+        </div>
+        <div class="card" data-nome = "pera">
+          <img
+            class="frente"
+            src="img/pera.png"
+            alt="card"
+          />
+          <img
+            class="verso"
+            src="img/script-java.png"
+            alt="card"
+          />
+        </div>
+        <div class="card" data-nome = "Banana">
+          <img
+            class="frente"
+            src="img/banana.png"
+            alt="card"
+          />
+          <img
+            class="verso"
+            src="img/script-java.png"
+            alt="card"
+          />
+        </div>
+        <div class="card" data-nome = "Banana">
+          <img
+            class="frente"
+            src="img/banana.png"
+            alt="card"
+          />
+          <img
+            class="verso"
+            src="img/script-java.png"
+            alt="card"
+          />
+        </div>
+        <div class="card" data-nome = "abacate">
+          <img
+            class="frente"
+            src="img/abacate.png"
+            alt="card"
+          />
+          <img
+            class="verso"
+            src="img/script-java.png"
+            alt="card"
+          />
+        </div>
+        <div class="card" data-nome = "abacate">
+          <img
+            class="frente"
+            src="img/abacate.png"
+            alt="card"
+          />
+          <img
+            class="verso"
+            src="img/script-java.png"
+            alt="card"
+          />
+        </div>
+        <div class="card" data-nome = "kiwi">
+          <img
+            class="frente"
+            src="img/kiwi.png"
+            alt="card"
+          />
+          <img
+            class="verso"
+            src="img/script-java.png"
+            alt="card"
+          />
+        </div>
+        <div class="card" data-nome = "kiwi">
+          <img
+            class="frente"
+            src="img/kiwi.png"
+            alt="card"
+          />
+          <img
+            class="verso"
+            src="img/script-java.png"
+            alt="card"
+          />
+        </div>
+      </section>
+      <section id="dir"></section>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,105 @@
+/* Estilos para a tabela */
+table {
+  border: 2px solid rgba(82, 112, 0, 0.432);
+  border-collapse: collapse;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+th, td {
+  padding: 10px;
+  text-align: center;
+  border: 1px solid rgba(66, 90, 0, 0.432);
+}
+
+th {
+  background-color: rgba(82, 112, 0, 0.432);
+  color: white;
+}
+
+/* Estilos para o cabeçalho e menu de navegação */
+header {
+  background-color: rgba(82, 112, 0, 0.432);
+  text-align: center;
+  padding: 20px 0;
+}
+
+nav {
+  margin-top: 20px;
+  text-align: center;
+}
+
+ul {
+  display: inline-block;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}
+
+/* Estilos para o conteúdo */
+h2 {
+  text-align: center;
+  margin-top: 30px;
+}
+
+p {
+  text-align: justify;
+  margin: 30px 0;
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+span {
+  display: block;
+  text-align: center;
+  font-size: x-small;
+}
+
+/* Estilos para o formulário */
+form {
+  margin-top: 30px;
+  text-align: center;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+}
+
+input[type="text"], input[type="email"] {
+  width: 300px;
+  height: 30px;
+  margin-top: 10px;
+  border: 1px solid rgba(60, 82, 1, 0.432);
+  border-radius: 5px;
+  padding-left: 5px;
+}
+
+input[type="radio"] {
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+input[type="submit"] {
+  background-color: rgba(60, 82, 0, 0.432);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  margin-top: 20px;
+  cursor: pointer;
+}

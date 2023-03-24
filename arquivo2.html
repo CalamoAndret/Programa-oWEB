@@ -1,0 +1,143 @@
+<!--Curso de Engenharia de Software - UniEVANGÉLICA Disciplina de Programação
+Web Dev: Cálamo Andret - 2110383 
+DATA: 03/03/2023-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Envie seu relato!</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link
+            rel="stylesheet"
+            href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"></head>
+    <body>
+        <div class="container">
+            <div class="jumbotron">
+                <h3 class="display-4">Conte-nos caso você já presenciou um preço abusivo de uma fruta!</h3>
+            </div>
+            <form action="processadados.php" method="post">
+                <div class="form-group">
+                    <label for="nome">Nome:</label>
+                    <input type="text" class="form-control" id="nome" name="nome"></div>
+
+                <div class="form-group">
+                    <label for="cidade">Cidade:</label>
+                    <input type="text" class="form-control" id="cidade" name="cidade"></div>
+
+                <div class="form-group">
+                    <label for="estado">Estado:</label>
+                    <input type="text" class="form-control" id="estado" name="estado"></div>
+
+                <div class="form-group">
+                    <label for="contato">Contato:</label>
+                    <input type="number" class="form-control" id="contato" name="contato"></div>
+
+                <div class="form-group">
+                    <label for="nomefruta">Nome da Fruta:</label>
+                    <input type="text" class="form-control" id="nomefruta" name="nomefruta"></div>
+
+                <div class="form-group">
+                    <label for="preço">Preço da Fruta (R$):</label>
+                    <input type="number" class="form-control" id="preço" name="preço"></div>
+
+                <div class="form-group">
+                    <label>Onde você comprou:</label>
+                    <br>
+                    <div class="form-check form-check-inline">
+                        <input
+                            type="radio"
+                            class="form-check-input"
+                            name="local"
+                            id="feira"
+                            value="feira">
+                        <label class="form-check-label" for="feira">Feira</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input
+                            type="radio"
+                            class="form-check-input"
+                            name="local"
+                            id="mercado"
+                            value="mercado">
+                        <label class="form-check-label" for="mercado">Mercado</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input
+                            type="radio"
+                            class="form-check-input"
+                            name="local"
+                            id="sacolao"
+                            value="sacolao">
+                        <label class="form-check-label" for="sacolao">Sacolão</label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>O que te chamou atenção na fruta:</label><br>
+                    <div class="form-check">
+                        <input
+                            type="checkbox"
+                            class="form-check-input"
+                            name="caracteristicas[]"
+                            id="preco"
+                            value="preco">
+                        <label class="form-check-label" for="preco">Preço</label>
+                    </div>
+                    <div class="form-check">
+                        <input
+                            type="checkbox"
+                            class="form-check-input"
+                            name="caracteristicas[]"
+                            id="cor"
+                            value="cor">
+                        <label class="form-check-label" for="cor">Cor</label>
+                    </div>
+                    <div class="form-check">
+                        <input
+                            type="checkbox"
+                            class="form-check-input"
+                            name="caracteristicas[]"
+                            id="valornutritivo"
+                            value="valornutritivo">
+                        <label class="form-check-label" for="valornutritivo">Valor Nutritivo</label>
+                    </div>
+                    <div class="form-check">
+                        <input
+                            type="checkbox"
+                            class="form-check-input"
+                            name="caracteristicas[]"
+                            id="formato"
+                            value="formato">
+                        <label class="form-check-label" for="formato">Formato</label>
+                    </div>
+                    <div class="form-check">
+                        <input
+                            type="checkbox"
+                            class="form-check-input"
+                            name="caracteristicas[]"
+                            id="cheiro"
+                            value="cheiro">
+                        <label class="form-check-label" for="cheiro">Cheiro</label>
+                    </div>
+                    <div class="form-check">
+                        <input
+                            type="checkbox"
+                            class="form-check-input"
+                            name="caracteristicas[]"
+                            id="sabor"
+                            value="sabor">
+                        <label class="form-check-label" for="sabor">Sabor</label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="comentario">Comentários:</label>
+                    <textarea class="form-control" rows="5" id="comentario" name="comentario"></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,50 @@
+<!--Curso de Engenharia de Software - UniEVANGÉLICA 
+Disciplina de Programação Web 
+Dev: Cálamo Andret - 2110383 
+DATA: 23/03/2023-->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Agendamento de Consulta</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <header>
+	<h1>Agendamento de Consulta</h1>
+    </header>
+	<form>
+		<label for="doctor">Médico:</label>
+		<select id="doctor" name="doctor">
+			<option value="dr-john">Dr. John</option>
+			<option value="dr-mary">Dr. Mary</option>
+			<option value="dr-jane">Dr. Jane</option>
+		</select>
+		<br><br>
+		<label for="appointment-type">Tipo de Consulta:</label>
+		<select id="appointment-type" name="appointment-type">
+			<option value="consulta-geral">Consulta Geral</option>
+			<option value="consulta-dermatologista">Consulta Dermatologista</option>
+			<option value="consulta-cardiologista">Consulta Cardiologista</option>
+		</select>
+		<br><br>
+		<label for="date">Data:</label>
+		<input type="date" id="date" name="date">
+		<br><br>
+		<label for="time">Horário:</label>
+		<select id="time" name="time">
+			<option value="08:00">08:00</option>
+			<option value="09:00">09:00</option>
+			<option value="10:00">10:00</option>
+			<option value="11:00">11:00</option>
+			<option value="14:00">14:00</option>
+			<option value="15:00">15:00</option>
+			<option value="16:00">16:00</option>
+			<option value="17:00">17:00</option>
+		</select>
+		<br><br>
+		<input type="submit" value="Agendar Consulta">
+	</form>
+	<script src="script.js"></script>
+</body>
+</html>
