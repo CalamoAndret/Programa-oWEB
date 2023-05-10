@@ -7,6 +7,12 @@
 const express = require('express');
 const app = express();
 const path = require('path');
+const Fruta = require('./models/Fruta');
+const Venda = require('./models/Venda');
+
+// Registrar os models
+Fruta.sync();
+Venda.sync();
 
 const FrutaController = require('./controllers/frutaController');
 
